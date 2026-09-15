@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de turnos médicos</title>
+</head>
+<body>
+    <header>
+        <h1>Consultorio médico</h1>
+        </header>
+    <main>
+        <p>Bienvenido a nuestro sistema de reserva de turnos</p>
+  <article>
+    <h2>Atención médica de calidad</h2>
+
+    <p>
+      En nuestro consultorio brindamos atención profesional y personalizada.
+      Podés solicitar tu turno completando el formulario.
+    </p>
+  </article>
+
+  <section>
+    <h2>Contacto y ubicación</h2>
+    <p>Visitá nuestro consultorio en la Ciudad de Buenos Aires.</p>
+
+    <iframe
+      src="https://www.google.com/maps?q=Obelisco,+Buenos+Aires&output=embed"
+      width="600"
+      height="450"
+      title="Mapa del Obelisco de Buenos Aires"
+      loading="lazy">
+    </iframe>
+  </section>
+    <section>
+    <h2>Conocé más sobre nuestros servicios</h2>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/UB1O30fR-EE"
+      title="Video informativo"
+      allowfullscreen>
+    </iframe>
+  </section>
+<form action="/reservar-turno" method="post">
+  <h2>Solicitar un turno médico</h2>
+
+  <label for="nombre">Nombre del paciente:</label>
+  <input type="text" id="nombre" name="nombre_paciente" required>
+
+  <br><br>
+
+  <label for="correo">Correo electrónico:</label>
+  <input type="email" id="correo" name="correo_paciente" required>
+  <br><br>
+
+<label for="fecha">Fecha del turno:</label>
+<input type="date" id="fecha" name="fecha_turno" required>
+<br><br>
+
+<fieldset>
+  <legend>Horario de atención:</legend>
+
+  <input type="radio" id="manana" name="horario" value="manana" required>
+  <label for="manana">Mañana</label>
+
+  <input type="radio" id="tarde" name="horario" value="tarde">
+  <label for="tarde">Tarde</label>
+</fieldset>
+<br>
+
+<button type="submit">Solicitar Turno</button>
+</form>
+</main>
+    <footer>
+        <p>Consultorio médico - 2026</p>
+    </footer>
+</body>
+</html>
